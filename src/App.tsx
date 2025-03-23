@@ -13,7 +13,7 @@ type State = {
   hasClock: boolean;
 };
 
-export class App extends React.Component<State> {
+export class App extends React.Component<{}, State> {
   timerId = 0;
 
   state: State = {
